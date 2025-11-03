@@ -1,0 +1,391 @@
+/*
+    Arquivo: lealphone.css
+    Estilização Profissional para a página do LealPhone (Versão 3 - Imagens Ajustadas)
+*/
+
+/* --- Cores de Referência ---
+  #000000 - Preto (Fundo e Texto Principal)
+  #FFFFFF - Branco (Fundo e Destaque)
+  #333333 - Cinza Escuro (Corpo do Texto)
+  #CC0000 - Vermelho Leal (Preço, Destaque, Linhas)
+*/
+
+/* --- Estilos Gerais e Reset --- */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333333;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+main {
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Cabeçalho (Header) --- */
+header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.fagrego {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.p1 {
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 20px;
+    color: #aaaaaa;
+    text-align: center;
+    margin: 5px 0 10px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #333333;
+}
+
+/* --- Ícone do WhatsApp --- */
+.zap {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    z-index: 1000;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.zap:hover {
+    transform: scale(1.05);
+}
+
+/* --- Banner de Propaganda --- */
+.div1 {
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: #ffffff;
+}
+
+.banner {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* --- Carrossel de Imagens (div2) --- */
+.div2 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto 50px auto;
+    padding: 0 20px;
+    overflow-x: auto;
+    box-sizing: border-box;
+}
+
+.img1 {
+    width: 120px;
+    height: auto;
+    flex-shrink: 0;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: border 0.2s;
+    border-radius: 4px;
+}
+
+.img1:hover {
+    border: 3px solid #CC0000;
+}
+
+/* --- Preço e Título do Produto (p2) --- */
+.p2 {
+    text-align: center;
+    font-size: 1.6em;
+    margin-bottom: 50px;
+    padding: 15px 0;
+    border-top: 2px solid #eeeeee;
+    border-bottom: 2px solid #eeeeee;
+}
+
+.p2 strong {
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.p2 s {
+    color: #888888;
+    font-size: 0.7em;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.p2 > s + br + span {
+    color: #CC0000;
+    font-weight: bold;
+    font-size: 2em;
+    display: block;
+    margin-top: 5px;
+}
+
+/* --- Especificações (div3) --- */
+.div3 {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin: 0 auto 50px auto;
+    padding: 40px 20px;
+    max-width: 90%;
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.img2 {
+    width: 250px;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 8px;
+}
+
+.div3 ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.div3 li {
+    margin-bottom: 12px;
+    font-size: 1.1em;
+    padding-left: 20px;
+    position: relative;
+}
+
+.div3 li::before {
+    content: '•';
+    color: #CC0000;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: 0;
+}
+
+
+/* --- Destaques do Produto (p3 e p4) --- */
+.p3 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #000000;
+    margin: 60px 0 10px 0;
+    font-weight: 900;
+}
+
+.p4 {
+    text-align: center;
+    font-size: 1.25em;
+    margin-bottom: 60px;
+    padding: 0 15%;
+    color: #666666;
+}
+
+/* --- Imagens de Destaque (img3, img4) --- */
+.img3, .img4 {
+    display: block;
+    width: 20%;
+    /* REDUÇÃO DE TAMANHO APLICADA AQUI */
+    max-width: 500px; /* Reduzido de 850px para 650px */
+    height: auto;
+    margin: 60px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Cores e Tela (p5, p6) --- */
+.p5 {
+    font-size: 1.8em;
+    text-align: center;
+    color: #000000;
+    margin: 40px 0 10px 0;
+    font-weight: bold;
+}
+
+.p6 {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 40px;
+    padding: 0 15%;
+    color: #666666;
+}
+
+/* --- Câmera (p7, p8, img5) --- */
+.p7 {
+    font-size: 3em;
+    text-align: center;
+    font-weight: 900;
+    color: #CC0000;
+    margin: 60px 0 5px 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.p8 {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #000000;
+}
+
+.img5 {
+    display: block;
+    width: 20%;
+    /* REDUÇÃO DE TAMANHO APLICADA AQUI */
+    max-width: 700px; /* Reduzido de 900px para 700px */
+    height: auto;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Vídeo --- */
+video {
+    display: block;
+    width: 100%;
+    /* REDUÇÃO DE TAMANHO APLICADA AQUI */
+    max-width: 750px; /* Reduzido de 900px para 750px */
+    height: auto;
+    margin: 60px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Voltar ao Início --- */
+.div4 {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px 0;
+    border-top: 1px solid #dddddd;
+}
+
+.div4 a {
+    color: #CC0000;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 25px;
+    border: 2px solid #CC0000;
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.div4 a:hover {
+    background-color: #CC0000;
+    color: #ffffff;
+}
+
+/* --- Rodapé (Footer) --- */
+footer {
+    background-color: #000000;
+    color: #aaaaaa;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.8em;
+    line-height: 1.8;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* --- Responsividade (Media Query) --- */
+@media (max-width: 768px) {
+    .p1 {
+        word-spacing: 10px;
+        font-size: 0.75em;
+    }
+
+    .div3 {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .img2 {
+        width: 200px;
+    }
+
+    .div3 ul {
+        text-align: left;
+    }
+
+    .div3 li {
+        font-size: 1em;
+        padding-left: 0;
+    }
+
+    .div3 li::before {
+        left: -10px;
+    }
+
+    .p3 {
+        font-size: 1.8em;
+    }
+
+    .p7 {
+        font-size: 2.2em;
+    }
+
+    .p8 {
+        font-size: 1.4em;
+    }
+
+    .p4, .p6 {
+        padding: 0 5%;
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .fagrego {
+        width: 150px;
+    }
+
+    .p1 {
+        word-spacing: 5px;
+        font-size: 0.7em;
+        letter-spacing: 0;
+    }
+
+    .p2 strong {
+        font-size: 1em;
+    }
+
+    .p2 > span:last-of-type {
+        font-size: 1.5em;
+    }
+}
